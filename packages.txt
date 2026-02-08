@@ -4,6 +4,8 @@ zsh
 git
 curl
 wget
+neovim
+tmux
 
 # Поиск и навигация
 ripgrep

@@ -34,6 +34,7 @@ sudo apt install -y \
   git \
   curl \
   wget \
+  tmux \
   ripgrep \
   fd-find \
   nodejs \
