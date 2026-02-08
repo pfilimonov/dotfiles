@@ -5,6 +5,7 @@ return {
   version = false,
   opts = {
     provider = "claude",
+    mode = "legacy",
     providers = {
       claude = {
         endpoint = "https://api.anthropic.com",
@@ -14,6 +15,15 @@ return {
           max_tokens = 4096,
         },
       },
+    },
+    behaviour = {
+      auto_suggestions = false,
+      auto_apply_diff_after_generation = false,
+      auto_approve_tool_permissions = false,
+      enable_fastapply = false,
+      auto_add_current_file = false,
+      acp_follow_agent_locations = false,
+      support_paste_from_clipboard = true,
     },
   },
   build = "make",
