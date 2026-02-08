@@ -13,7 +13,7 @@ Personal development environment configuration.
 ## Quick Setup (New Machine)
 ```bash
 # 1. Clone dotfiles
-git clone https://github.com/YOUR_USERNAME/dotfiles.git ~/dotfiles
+git clone https://github.com/pfilimonov/dotfiles.git ~/dotfiles
 
 # 2. Run install script
 cd ~/dotfiles
@@ -27,10 +27,12 @@ echo 'export ANTHROPIC_API_KEY="your-key"' >> ~/.zshrc
 
 ## Manual Installation
 
-### Alacritty
+### Alacritty (if you want to use it)
 ```bash
 ln -sf ~/dotfiles/alacritty/alacritty.toml ~/.config/alacritty/alacritty.toml
 ```
+
+- Note: To use Alacritty follow their [installation guide](https://github.com/alacritty/alacritty/blob/master/INSTALL.md)
 
 ### Neovim
 ```bash

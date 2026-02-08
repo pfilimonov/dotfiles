@@ -29,6 +29,7 @@ link_file() {
 echo "📦 Installing packages..."
 sudo apt update
 sudo apt install -y \
+  neovim \
   zsh \
   git \
   curl \
