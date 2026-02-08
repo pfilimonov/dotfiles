@@ -20,7 +20,8 @@ cd ~/dotfiles
 ./install.sh
 
 # 3. Set up API keys
-echo 'export ANTHROPIC_API_KEY="your-key"' >> ~/.zshrc
+touch ~/.zshrc.local
+echo 'export ANTHROPIC_API_KEY="your-key"' >> ~/.zshrc.local
 
 # 4. Restart terminal
 ```

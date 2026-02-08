@@ -102,4 +102,7 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-export ANTHROPIC_API_KEY=
+# export ANTHROPIC_API_KEY="get-from-~/.zshrc.local"
+if [ -f ~/.zshrc.local ]; then
+  source ~/.zshrc.local
+fi
