@@ -1,0 +1,18 @@
+# ~/dotfiles/.gitignore
+
+# Секреты
+.secrets
+**/secret*
+**/*secret*
+
+# Nvim runtime
+nvim/.local/
+nvim/.cache/
+
+# Backup files
+*.backup.*
+*~
+
+# OS specific
+.DS_Store
+Thumbs.db

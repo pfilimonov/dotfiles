@@ -1,0 +1,26 @@
+# ~/dotfiles/packages.txt
+# Основные инструменты
+zsh
+git
+curl
+wget
+
+# Поиск и навигация
+ripgrep
+fd-find
+
+# Development
+nodejs
+npm
+build-essential
+cmake
+clang
+clangd
+
+# Clipboard
+xclip
+wl-clipboard
+
+# Python
+python3-pip
+python3-venv
