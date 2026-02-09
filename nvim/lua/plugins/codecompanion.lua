@@ -6,6 +6,15 @@ return {
     "nvim-treesitter/nvim-treesitter",
   },
   opts = {
+    display = {
+      chat = {
+        window = {
+          width = 0.25,
+          relative = "editor",
+          border = "rounder",
+        },
+      },
+    },
     interactions = {
       chat = {
         adapter = "anthropic",
