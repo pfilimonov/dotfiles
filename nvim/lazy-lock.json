@@ -9,6 +9,7 @@
   "catppuccin": { "branch": "main", "commit": "beaf41a30c26fd7d6c386d383155cbd65dd554cd" },
   "clangd_extensions.nvim": { "branch": "main", "commit": "e84eaea7ca79610d7047fb1c9d74f15bb1c9db34" },
   "cmake-tools.nvim": { "branch": "master", "commit": "75a3589cf5ff19ede2a0c0f34da5c37554a44221" },
+  "codecompanion.nvim": { "branch": "main", "commit": "26fa57cd0ac019c9bae539e7530f7c9401cbee55" },
   "codeium.nvim": { "branch": "main", "commit": "821b570b526dbb05b57aa4ded578b709a704a38a" },
   "conform.nvim": { "branch": "master", "commit": "c2526f1cde528a66e086ab1668e996d162c75f4f" },
   "crates.nvim": { "branch": "main", "commit": "ac9fa498a9edb96dc3056724ff69d5f40b898453" },
