@@ -3,7 +3,19 @@ return {
   {
     "MeanderingProgrammer/render-markdown.nvim",
     ft = { "markdown" },
-    opts = {},
+    opts = {
+      -- Рендерить ТОЛЬКО в normal mode
+      render_modes = { "n", "c" },
+
+      -- Задержка перед рендерингом
+      debounce = 100,
+
+      -- Отключить LaTeX если не используете
+      latex = { enabled = false },
+
+      -- Оптимизация
+      sign = { enabled = false },
+    },
   },
 
   -- Browser preview с Mermaid
