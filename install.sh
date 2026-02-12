@@ -95,6 +95,11 @@ if [ "$SHELL" != "$(which zsh)" ]; then
   echo -e "${YELLOW}⚠️  Please log out and log back in for shell change to take effect${NC}"
 fi
 
+# Tmux
+mkdir -p ~/.tmux/plugins
+ln -sf ~/dotfiles/tmux/.tmux.conf ~/.tmux.conf
+ln -sf ~/dotfiles/tmux/tpm ~/.tmux/plugins/tpm
+
 echo ""
 echo -e "${GREEN}✨ Dotfiles setup complete!${NC}"
 echo ""
