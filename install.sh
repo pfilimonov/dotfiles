@@ -58,8 +58,7 @@ fi
 echo "🔗 Linking config files..."
 
 # Alacritty
-mkdir -p ~/.config/alacritty
-link_file "$DOTFILES_DIR/alacritty/alacritty.toml" "$HOME/.config/alacritty/alacritty.toml"
+link_file "$DOTFILES_DIR/alacritty" "$HOME/.config/alacritty"
 
 # Neovim
 link_file "$DOTFILES_DIR/nvim" "$HOME/.config/nvim"
