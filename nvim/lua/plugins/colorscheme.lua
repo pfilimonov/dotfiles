@@ -1,16 +1,20 @@
 -- ~/.config/nvim/lua/plugins/colorscheme.lua
 return {
+  -- Отключи gruvbox (или просто удали его блок)
+  -- { "ellisonleao/gruvbox.nvim", enabled = false },
+
+  -- Новая тема cyberdream
   {
-    "ellisonleao/gruvbox.nvim",
+    "scottmckendry/cyberdream.nvim",
     lazy = false,
     priority = 1000,
     config = function()
-      require("gruvbox").setup({
-        contrast = "hard", -- or "soft" для светлого
-        transparent_mode = false, -- использовать фон терминала
+      require("cyberdream").setup({
+        variant = "light", -- или "default" для темной, "auto" для авто
+        transparent = false,
+        -- Другие опции из документации можно добавить тут
       })
-      vim.opt.background = "light"
-      vim.cmd([[colorscheme gruvbox]])
+      vim.cmd.colorscheme("cyberdream")
     end,
   },
 }
