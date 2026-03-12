@@ -3,3 +3,5 @@ require("config.lazy")
 
 vim.cmd.colorscheme(vim.g.lazyvim_colorscheme)
 vim.opt.termguicolors = true
+
+require("langmapper").automapping({ global = true, buffer = true })
