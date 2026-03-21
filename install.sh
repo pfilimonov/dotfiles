@@ -29,6 +29,8 @@ link_file() {
 echo "📦 Installing packages..."
 sudo apt update
 sudo apt install -y \
+  unzip \
+  fontconfig \
   zsh \
   git \
   curl \
@@ -46,7 +48,7 @@ sudo apt install -y \
 
 # Neovim
 mkdir -p ~/Downloads
-wget -P ~/Downloads https://github.com/neovim/neovim/releases/download/v0.11.0/nvim-linux-x86_64.tar.gz
+wget -P ~/Downloads https://github.com/neovim/neovim/releases/download/v0.11.6/nvim-linux-x86_64.tar.gz
 sudo tar -xf ~/Downloads/nvim-linux-x86_64.tar.gz -C /opt
 echo 'export PATH="$PATH:/opt/nvim-linux-x86_64/bin"' >>~/dotfiles/zsh/.zshrc
 
@@ -61,6 +63,8 @@ fi
 
 # 3. Линкуем конфиги
 echo "🔗 Linking config files..."
+
+mkdir -p ~/.config
 
 # Alacritty
 link_file "$DOTFILES_DIR/alacritty" "$HOME/.config/alacritty"
