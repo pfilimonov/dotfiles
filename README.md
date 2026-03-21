@@ -10,7 +10,7 @@ Personal development environment configuration.
 - **AI**: Claude (Avante) + Codeium
 - **Languages**: C++, Python, Rust
 
-## Quick Setup (New Machine)
+## Quick Setup (New Machine x86_64)
 ```bash
 # 1. Clone dotfiles
 git clone https://github.com/pfilimonov/dotfiles.git ~/dotfiles
@@ -25,6 +25,8 @@ echo 'export ANTHROPIC_API_KEY="your-key"' >> ~/.zshrc.local
 
 # 4. Restart terminal
 ```
+
+*Note*: for non x86_machine you need to go to `install.sh` and manually change all platform dependent stuff.
 
 ## Manual Installation
 

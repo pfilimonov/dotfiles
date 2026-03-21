@@ -29,7 +29,6 @@ link_file() {
 echo "📦 Installing packages..."
 sudo apt update
 sudo apt install -y \
-  neovim \
   zsh \
   git \
   curl \
@@ -44,6 +43,12 @@ sudo apt install -y \
   xclip \
   clang \
   clangd
+
+# Neovim
+mkdir -p ~/Downloads
+wget -P ~/Downloads https://github.com/neovim/neovim/releases/download/v0.11.0/nvim-linux-x86_64.tar.gz
+sudo tar -xf ~/Downloads/nvim-linux-x86_64.tar.gz -C /opt
+echo 'export PATH="$PATH:/opt/nvim-linux-x86_64/bin"' >>~/dotfiles/zsh/.zshrc
 
 # Симлинк для fd
 sudo ln -sf $(which fdfind) /usr/local/bin/fd 2>/dev/null || true
