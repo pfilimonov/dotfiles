@@ -106,3 +106,6 @@ source $ZSH/oh-my-zsh.sh
 if [ -f ~/.zshrc.local ]; then
   source ~/.zshrc.local
 fi
+
+source "$HOME/.cargo/env"
+PATH="$HOME/.local/bin:$PATH"
