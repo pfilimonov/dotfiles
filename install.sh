@@ -90,16 +90,21 @@ fi
 cd "$DOTFILES_DIR"
 
 # 5. Установка Rust (для Alacritty если нужно собирать)
-if ! command -v rustc &>/dev/null; then
-  echo "🦀 Installing Rust..."
+if ! command -v rustup &>/dev/null; then
+  echo "🦀 Installing Rust (rustup)..."
   curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
+fi
+if [ -f "$HOME/.cargo/env" ]; then
   source "$HOME/.cargo/env"
+fi
+if ! grep -q '\.cargo/bin' ~/.zshrc 2>/dev/null; then
+  echo 'export PATH="$HOME/.cargo/bin:$PATH"' >>~/.zshrc
 fi
 
 # 6. Смена shell на zsh
 if [ "$SHELL" != "$(which zsh)" ]; then
   echo "🐚 Changing shell to zsh..."
-  chsh -s $(which zsh)
+  sudo chsh -s $(which zsh)
   echo -e "${YELLOW}⚠️  Please log out and log back in for shell change to take effect${NC}"
 fi
 
